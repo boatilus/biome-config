@@ -1,0 +1,9 @@
+{
+  "author": "Ron Jones <ron@ovao.dev>",
+  "description": "Ron Jones's Personal Biome Config",
+  "license": "CC0-1.0",
+  "main": "biome.json",
+  "name": "@ovao/biome-config",
+  "private": false,
+  "version": "1.0.0"
+}
