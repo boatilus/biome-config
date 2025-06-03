@@ -1,9 +1,18 @@
 {
-  "author": "Ron Jones <ron@ovao.dev>",
+  "author": {
+    "name": "Ron Jones",
+    "email": "ron@ovao.Dev",
+    "url": "https://ovao.dev"
+  },
   "description": "Ron Jones's Personal Biome Config",
   "license": "CC0-1.0",
   "main": "biome.json",
   "name": "@ovao/biome-config",
   "private": false,
-  "version": "1.0.0"
+  "homepage": "https://github.com/boatilus/biome-config#readme",
+  "version": "1.0.1",
+  "repository": {
+    "type": "git",
+    "url": "github:boatilus/biome-config"
+  }
 }
