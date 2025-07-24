@@ -1,17 +1,28 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.1.2/schema.json",
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "on",
+        "useSortedAttributes": "on",
+        "useSortedKeys": "on",
+        "useSortedProperties": "on"
+      }
+    }
+  },
   "files": {
-    "ignore": [
-      ".next",
-      ".vercel",
-      "*.d.ts",
-      "*.spec.ts",
-      "**/package.json",
-      "dist",
-      "wasm",
-      "webpack-stats.json"
-    ],
-    "ignoreUnknown": true
+    "ignoreUnknown": true,
+    "includes": [
+      "**",
+      "!**/.next",
+      "!**/.vercel",
+      "!**/*.d.ts",
+      "!**/*.spec.ts",
+      "!**/package.json",
+      "!**/dist",
+      "!**/wasm",
+      "!**/webpack-stats.json"
+    ]
   },
   "formatter": {
     "enabled": true,
@@ -27,9 +38,14 @@
   "linter": {
     "enabled": true,
     "rules": {
+      "complexity": {
+        "noCommaOperator": "off"
+      },
+      "correctness": {
+        "noUnusedImports": "warn"
+      },
       "recommended": true,
       "style": {
-        "noCommaOperator": "off",
         "noParameterAssign": "off",
         "noUnusedTemplateLiteral": "off"
       },
@@ -39,9 +55,6 @@
         "noUnsafeDeclarationMerging": "off"
       }
     }
-  },
-  "organizeImports": {
-    "enabled": true
   },
   "vcs": {
     "clientKind": "git",
